@@ -9,8 +9,8 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: black;
     color: white;
+    background-color: #050816;
 }
 
 html {
@@ -21,11 +21,19 @@ p {
     color: white;
 }
 
-/* TRNASITION */
+/* TRANSITION */
 
 a,
 .btn {
     transition: all 300ms ease;
+}
+
+/* MAIN */
+
+.main-container {
+    background-image: url('./assets/herobg.png'); 
+    background-size: cover;
+    background-position: center;
 }
 
 /* DESKTOP NAV */
@@ -145,3 +153,195 @@ a:hover {
 
 /* SECTIONS */
 
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section_pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section_text {
+    align-self: center;
+    text-align: center;
+}
+
+.section_text p {
+    font-weight: 600;
+}
+
+.section_text_p1 {
+    text-align: center;
+}
+
+.section_text_p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    color: #915eff;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    width: 30px; 
+    height: 30px; 
+    border: 0.1rem solid #915eff; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6.8px 4px 0.2px;
+    color: #915eff;
+    font-size: 24px;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+  
+.icon:hover {
+    color: black; 
+    background-color: #915eff;
+}
+
+/* BUTTON */
+
+.btn-container {
+    display:flex;
+    justify-self: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1, .btn-color-2 {
+    border: 0.1rem solid #915eff;
+}
+
+.btn-color-1:hover, .btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-2:hover {
+    background: #915eff;
+    color: black;
+}
+
+.btn-color-1:hover {
+    background-color: #7a4be7;
+    border: 0.1rem solid #7a4be7;
+}
+
+.btn-color-2 {
+    background: none;
+    color: #915eff;
+}
+
+.btn-color-1 {
+    background: #915eff;
+    color: black;
+}
+
+.btn-container {
+    gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow-icon {
+    font-size: 24px;
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.about-icon {
+    height: 2rem;
+}
+
+.details-wrapper {
+    padding: 0.1rem;
+    border-radius: 1.9rem;
+    flex: 1;
+    background: linear-gradient(180deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+.details-container {
+    padding: 1.5rem;
+    background: #151030;
+    border-radius: 1.9rem;
+    text-align: center;
+    width: 490px;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.section_pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
