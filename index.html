@@ -9,6 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    
     <div class="main-container">
         <nav id="desktop-nav">
             <div class="logo">Huu Thang Ly</div>
@@ -46,8 +47,8 @@
                 <p class="section_text_p1">Hello, I'm</p>
                 <h1 class="title">Huu Thang Ly</h1>
                 <div class="section_text_p2">
-                    <p>Computer Engineering Student</p>
-                    <p>Florida International University</p>
+                    <p style="color: white">Computer Engineering Student</p>
+                    <p style="color: white">Florida International University</p>
                 </div>
                 <div class="btn-container">
                     <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">Resume <i class="fas fa-download" aria-hidden="true"></i></button>
@@ -66,40 +67,160 @@
     </div>
 
     <section id="about">
-        <p class="section_text_p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
+        <p class="section_text_top">Get To Know More</p>
+        <h1 class="title-top">About Me</h1>
         <div class="section-container">
             <div class="section_pic-container">
-                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic"/>
+                <img src="./assets/about_pic.jpg" alt="Profile picture" class="about-pic"/>
             </div>
             <div class="about-details-container">
+                <div class="text-container">
+                    <p>I’m currently a junior Computer Engineering student at Florida International University, concentrating in hardware engineering, embedded systems, artificial intelligence, and data systems software. With a solid foundation in analog and digital circuit design, FPGA, microcontrollers, 
+                        and proficiency in programming languages such as C, C++, Java, Python, and MATLAB,
+                        I aim to make a meaningful impact in computer engineering by integrating software and hardware solutions to solve complex challenges.</p>
+                </div>
                 <div class="about-containers">
-                    <div class="details-wrapper">
-                        <div class="details-container">
-                            <img src="./assets/experience.png" alt="education icon" class="about-icon"/>
-                            <h3>Education</h3>
-                            <p>B.Sc. in Computer Engineering</p>
-                            <p>GPA: 3.98</p>
-                        </div>
+                    <div class="details-container">
+                        <i class="fa-solid fa-book-open about-icon" aria-hidden="true"></i>
+                        <h3>Education</h3>
+                        <p>B.Sc. in Computer Engineering</p>
+                        <p>GPA: 3.97</p>
                     </div>
-                    <div class="details-wrapper">
-                        <div class="details-container">
-                            <img src="./assets/education.png" alt="experience icon" class="about-icon"/>
-                            <h3>Experience</h3>
-                            <p>Hardware Development</p>
-                            <p>Software Development</p>
-                        </div>
+                    <div class="details-container">
+                        <i class="fa-solid fa-certificate about-icon" aria-hidden="true"></i>
+                        <h3>Certificates</h3>
+                        <p>Azure Fundamentals (AZ-900)</p>
+                        <p>CodePath Intro to Web Development</p>
                     </div>
                 </div>
-                <div class="text-container">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur earum debitis eaque deleniti assumenda vero veniam maxime, natus, possimus quia mollitia quasi omnis eos eum, 
-                        porro doloremque? Ducimus, pariatur exercitationem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur earum debitis eaque deleniti assumenda vero veniam maxime, natus, possimus quia mollitia quasi omnis eos eum, 
-                        porro doloremque? Ducimus, pariatur exercitationem!</p>
+                <div class="about-containers">
+                    <div class="details-container">
+                        <i class="fa-solid fa-code about-icon" aria-hidden="true"></i>
+                        <h3>Software Skills</h3>
+                        <p>C/C++, Java, Python, C#, JavaScript, HTML, CSS, MIPS, MATLAB</p>
+                    </div>
+                    <div class="details-container">
+                        <i class="fa-solid fa-microchip about-icon" aria-hidden="true"></i>
+                        <h3>Hardware Skills</h3>
+                        <p>Analog/Digital Design, VHDL, Explorer 8, Arduino, ESP32, FPGA</p>
+                    </div>
                 </div>
             </div>
         </div>
         <i class="fa-solid fa-angles-down arrow-icon" onclick="location.href='./#experience'" aria-hidden="true"></i>
     </section>
+
+    <section id="experience">
+        <p class="section_text_top">Explore My</p>
+        <h1 class="title-top">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container-exp">
+                    <h2 class="experience-title">Undergraduate Research Assistant</h2>
+                    <h3 class="experience-sub-title">FIU - Electrical and Computer Engineering | Dr. Shekhar Bhansali's Lab</h3>
+                    <div class="article-container">
+                        <li>Pursuing research on additive manufacturing with copper slurry and laser sintering to develop conductive traces for
+                            flexible electronics, sensors, and printed circuit boards.</li>
+                        <li> Investigating advanced 3D printing methods with PEEK to fabricate high-performance components tailored for
+                            aerospace and automotive industries.</li>
+                        <li>Exploring plasma-induced enhancement of electronic properties in gold nanoparticles across various substrates to
+                            enhance biosensor sensitivity.</li>
+                        <li>Engage closely with multidisciplinary teams, contributing to high-impact publications and presentations across fields.</li>
+                    </div>
+                </div>
+                <div class="details-container-exp">
+                    <h2 class="experience-title">Learning Assistant</h2>
+                    <h3 class="experience-sub-title">Florida International University</h3>
+                    <div class="article-container">
+                        <li>Assisted students in succeeding in diverse math courses, including College Algebra, Precalculus, Calculus I, and
+                            Calculus II.</li>
+                        <li>Graded exams and provided detailed feedback to students, guiding each individual to strengthen understanding and
+                            performance.</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <i class="fa-solid fa-angles-down arrow-icon" onclick="location.href='./#projects'" aria-hidden="true"></i>
+    </section>
+
+    <section id="projects">
+        <p class="section_text_top">Browse My Recent</p>
+        <h1 class="title-top">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container-exp color-container">
+                    <div class="article-container">
+                        <img src="./assets/project_1.jpg" alt="Project 1" class="project-img"/>
+                    </div>
+                    <h2 class="experience-title project-title">Butterfly Garden IoT</h2>
+                    <p class="project-text">An IoT-based system to monitor temperature, humidity, CO2 levels, soil moisture, TVOC, and visitor count in FIU's butterfly garden for real-time environmental monitoring and engagement.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/INIT-BUILD-IoT-Garden/iot_garden'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container-exp color-container">
+                    <div class="article-container">
+                        <img src="./assets/project_2.jpg" alt="Project 2" class="project-img"/>
+                    </div>
+                    <h2 class="experience-title project-title">OpenController</h2>
+                    <p class="project-text">An extensible controller capable of switching between gamepad and keyboard modes, featuring customizable key bindings for enhanced accessibility and user-friendly input options.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RamenBuddha/SH24'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://devpost.com/software/opencontroller'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container-exp color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot 2024-12-23 201008-1080x1080.png" alt="Project 3" class="project-img"/>
+                    </div>
+                    <h2 class="experience-title project-title">CatTrax</h2>
+                    <p class="project-text">A VR game simulating real locomotive controls, enabling players to navigate a cat train between tracks while avoiding obstacles.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn">
+                            Awaiting Publication
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <i class="fa-solid fa-angles-down arrow-icon" onclick="location.href='./#contact'" aria-hidden="true"></i>   
+    </section>
+
+    <section id="contact">
+        <p class="section_text_top">Get in Touch</p>
+        <h1 class="title-top">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <i class="fa-solid fa-envelope contact-icon" aria-hidden="true"></i>
+                <p><a href="mailto:hly003@fiu.edu">hly003@fiu.edu</a></p>
+            </div>
+            <div class="contact-info-container">
+                <i class="fa-brands fa-linkedin contact-icon" aria-hidden="true"></i>
+                <p><a href="https://www.linkedin.com/in/huu-thang-ly/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>   
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
 
     <script src="script.js"></script>
 </body>
