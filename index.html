@@ -1,228 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Huu Thang Ly | Portfolio</title>
-    <link rel="icon" href="assets/Favicon.png">
+    <link rel="icon" href="assets/Favicon.png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-</head>
-<body>
-    
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas id="particle-canvas"></canvas>
     <div class="main-container">
-        <nav id="desktop-nav">
-            <div class="logo">Huu Thang Ly</div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <nav id="hamburger-nav">
-            <div class="logo">Huu Thang Ly</div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div> 
-                <div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                </div>
-            </div>
-        </nav>
+      <nav id="desktop-nav">
+        <div class="logo">Huu Thang Ly</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Huu Thang Ly</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
 
-        <section id="profile">
-            <div class="section_pic-container">
-                <img src="./assets/profile_pic.png" alt="Huu Thang Ly profile picture">
-            </div>
-            <div class="section_text">
-                <p class="section_text_p1">Hello, I'm</p>
-                <h1 class="title">Huu Thang Ly</h1>
-                <div class="section_text_p2">
-                    <p style="color: white">Computer Engineering Student</p>
-                    <p style="color: white">Florida International University</p>
-                </div>
-                <div class="btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">Resume <i class="fas fa-download" aria-hidden="true"></i></button>
-                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-                </div>
-                <div id="socials-container">
-                    <a href="https://www.linkedin.com/in/huu-thang-ly/" target="_blank">
-                        <i class="fa-brands fa-linkedin-in icon"></i>
-                    </a>
-                    <a href="https://github.com/huuthangly" target="_blank">
-                        <i class="fa-brands fa-github icon"></i>
-                    </a>                   
-                </div>
-            </div>
-        </section>
+      <section id="profile">
+        <div class="section_pic-container">
+          <img
+            src="./assets/profile_pic.png"
+            alt="Huu Thang Ly profile picture"
+          />
+        </div>
+        <div class="section_text">
+          <p class="section_text_p1">Hello, I'm</p>
+          <h1 class="title">Huu Thang Ly</h1>
+          <div class="section_text_p2">
+            <p style="color: white">Computer Engineering Student</p>
+            <p style="color: white">Florida International University</p>
+          </div>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/Resume.pdf')"
+            >
+              Resume <i class="fas fa-download" aria-hidden="true"></i>
+            </button>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='./#contact'"
+            >
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <a href="https://www.linkedin.com/in/huu-thang-ly/" target="_blank">
+              <i class="fa-brands fa-linkedin-in icon"></i>
+            </a>
+            <a href="https://github.com/huuthangly" target="_blank">
+              <i class="fa-brands fa-github icon"></i>
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
 
     <section id="about">
-        <p class="section_text_top">Get To Know More</p>
-        <h1 class="title-top">About Me</h1>
-        <div class="section-container">
-            <div class="section_pic-container">
-                <img src="./assets/about_pic.jpg" alt="Profile picture" class="about-pic"/>
-            </div>
-            <div class="about-details-container">
-                <div class="text-container">
-                    <p>I’m currently a junior Computer Engineering student at Florida International University, concentrating in hardware engineering, embedded systems, artificial intelligence, and data systems software. With a solid foundation in analog and digital circuit design, FPGA, microcontrollers, 
-                        and proficiency in programming languages such as C, C++, Java, Python, and MATLAB,
-                        I aim to make a meaningful impact in computer engineering by integrating software and hardware solutions to solve complex challenges.</p>
-                </div>
-                <div class="about-containers">
-                    <div class="details-container">
-                        <i class="fa-solid fa-book-open about-icon" aria-hidden="true"></i>
-                        <h3>Education</h3>
-                        <p>B.Sc. in Computer Engineering</p>
-                        <p>GPA: 3.97</p>
-                    </div>
-                    <div class="details-container">
-                        <i class="fa-solid fa-certificate about-icon" aria-hidden="true"></i>
-                        <h3>Certificates</h3>
-                        <p>Azure Fundamentals (AZ-900)</p>
-                        <p>CodePath Intro to Web Development</p>
-                    </div>
-                </div>
-                <div class="about-containers">
-                    <div class="details-container">
-                        <i class="fa-solid fa-code about-icon" aria-hidden="true"></i>
-                        <h3>Software Skills</h3>
-                        <p>C/C++, Java, Python, C#, JavaScript, HTML, CSS, MIPS, MATLAB</p>
-                    </div>
-                    <div class="details-container">
-                        <i class="fa-solid fa-microchip about-icon" aria-hidden="true"></i>
-                        <h3>Hardware Skills</h3>
-                        <p>Analog/Digital Design, VHDL, Explorer 8, Arduino, ESP32, FPGA</p>
-                    </div>
-                </div>
-            </div>
+      <p class="section_text_top">Get To Know More</p>
+      <h1 class="title-top">About Me</h1>
+      <div class="section-container">
+        <div class="section_pic-container">
+          <img
+            src="./assets/about_pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
-        <i class="fa-solid fa-angles-down arrow-icon" onclick="location.href='./#experience'" aria-hidden="true"></i>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              I'm currently a senior Computer Engineering student at Florida
+              International University, concentrating in embedded systems,
+              robotics, hardware and AI/Machine Learning. With a solid
+              foundation in circuit design, microcontrollers, FPGA, and
+              proficiency in programming languages such as C, C++, Python, and
+              MATLAB, I aim to make a meaningful impact in computer engineering
+              by developing hardware and AI solutions to solve complex
+              challenges.
+            </p>
+          </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <i
+                class="fa-solid fa-book-open about-icon"
+                aria-hidden="true"
+              ></i>
+              <h3>Education</h3>
+              <p>B.Sc. in Computer Engineering</p>
+              <p>GPA: 3.97</p>
+            </div>
+            <div class="details-container">
+              <i
+                class="fa-solid fa-certificate about-icon"
+                aria-hidden="true"
+              ></i>
+              <h3>Certificates</h3>
+              <p>Azure Fundamentals (AZ-900)</p>
+              <p>CodePath Intermediate Web Development</p>
+            </div>
+          </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <i class="fa-solid fa-code about-icon" aria-hidden="true"></i>
+              <h3>Software Skills</h3>
+              <p>
+                C/C++, Java, Python, JavaScript, HTML, CSS, MIPS, MATLAB, VHDL
+              </p>
+            </div>
+            <div class="details-container">
+              <i
+                class="fa-solid fa-microchip about-icon"
+                aria-hidden="true"
+              ></i>
+              <h3>Hardware Skills</h3>
+              <p>
+                Analog/Digital Design, FPGA Development, Oscilloscope,
+                Soldering, 3D Printing, Raspberry Pi, Arduino, ESP32
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <i
+        class="fa-solid fa-angles-down arrow-icon"
+        onclick="location.href='./#experience'"
+        aria-hidden="true"
+      ></i>
     </section>
 
     <section id="experience">
-        <p class="section_text_top">Explore My</p>
-        <h1 class="title-top">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container-exp">
-                    <h2 class="experience-title">Undergraduate Research Assistant</h2>
-                    <h3 class="experience-sub-title">FIU - Electrical and Computer Engineering | Dr. Shekhar Bhansali's Lab</h3>
-                    <div class="article-container">
-                        <li>Developing an innovative system combining additive manufacturing and virtual reality, employing digital twin technology and 
-                            Unreal Engine to create a virtual lab for remote 3D printer control, enhancing accessibility and efficiency in 3D printing.</li>
-                        <li>Pursuing research on advanced 3D printing with copper slurry and laser sintering to augment electrical conductivity 
-                            and flexibility of sensors and printed circuit boards.</li>
-                        <li>Exploring plasma-induced enhancement of electronic properties in gold nanoparticles across various 
-                            substrates to improve biosensor sensitivity.</li>
-                        <li>Engage closely with multidisciplinary teams, contributing to high-impact publications and presentations across fields.</li>
-                    </div>
-                </div>
-                <div class="details-container-exp">
-                    <h2 class="experience-title">Learning Assistant</h2>
-                    <h3 class="experience-sub-title">Florida International University</h3>
-                    <div class="article-container">
-                        <li>Assisted more than 100 students in succeeding across diverse math courses, including College Algebra, 
-                            Precalculus, Calculus I, and Calculus II.</li>
-                        <li>Graded exams and provided detailed feedback to students, guiding each individual to strengthen understanding and
-                            performance.</li>
-                    </div>
-                </div>
+      <p class="section_text_top">Explore My</p>
+      <h1 class="title-top">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container-exp">
+            <h2 class="experience-title">Embedded AI Engineer Intern</h2>
+            <h3 class="experience-sub-title">
+              Global AI Mining | July 2025 - Present
+            </h3>
+            <div class="article-container">
+              <li>
+                Developing a smart audio recording system using Raspberry Pi to
+                enable AI for real-time monitoring, analysis, and response
+                generation in audio conversations to enhance customer service
+                quality and response accuracy
+              </li>
+              <li>
+                Researching deployment strategies for small language models on
+                edge devices to optimize AI inference performance and reduce
+                latency for resource-constrained environments
+              </li>
+              <div class="experience-images-container">
+                <img
+                  src="./assets/GAIM_1.jpg"
+                  alt="Project 1"
+                  class="experience-img"
+                />
+              </div>
             </div>
+          </div>
+          <div class="details-container-exp">
+            <h2 class="experience-title">Undergraduate Research Assistant</h2>
+            <h3 class="experience-sub-title">
+              Florida International University | Dr. Himanshu Upadhyay's Lab |
+              September 2025 - Present
+            </h3>
+            <div class="article-container">
+              <li>
+                Implementing an autonomous drone system integrating YOLO for
+                object detection and Vision-Language Models for mission planning
+                and task execution in Unreal Engine simulation environment
+              </li>
+              <li>
+                Architecting multi-agent systems with LangChain for
+                cybersecurity operations and researching system-wide evaluation
+                frameworks to strengthen reliability and performance
+              </li>
+            </div>
+          </div>
         </div>
-        <i class="fa-solid fa-angles-down arrow-icon" onclick="location.href='./#projects'" aria-hidden="true"></i>
+        <div class="about-containers">
+          <div class="details-container-exp">
+            <h2 class="experience-title">Undergraduate Research Assistant</h2>
+            <h3 class="experience-sub-title">
+              FIU - Electrical and Computer Engineering | Dr. Shekhar Bhansali's
+              Lab | May 2024 - August 2025
+            </h3>
+            <div class="article-container">
+              <li>
+                Built a VR-enabled 3D printing system with digital twin
+                technology for remote printer monitoring and control, improving
+                accessibility and efficiency in additive manufacturing
+                <a
+                  href="https://www.youtube.com/watch?v=sP1458XDOt0&t=218s"
+                  class="demo-link"
+                >
+                  (View Demo)</a
+                >
+              </li>
+              <li>
+                Pursued research on advanced 3D printing with copper slurry and
+                laser sintering to augment electrical conductivity and
+                flexibility of sensors and printed circuit boards
+              </li>
+              <div class="experience-images-container">
+                <img
+                  src="./assets/VR_exp_1.jpg"
+                  alt="Project 1"
+                  class="experience-img"
+                />
+                <img
+                  src="./assets/VR_exp_2.jpg"
+                  alt="Project 1"
+                  class="experience-img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="details-container-exp">
+            <h2 class="experience-title">Learning Assistant</h2>
+            <h3 class="experience-sub-title">
+              Florida International University | August 2022 - August 2024
+            </h3>
+            <div class="article-container">
+              <li>
+                Assisted more than 100 students in succeeding across diverse
+                math courses, including College Algebra, Precalculus, Calculus
+                I, and Calculus II
+              </li>
+              <li>
+                Graded exams and provided detailed feedback to students, guiding
+                each individual to strengthen understanding and performance
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <i
+        class="fa-solid fa-angles-down arrow-icon"
+        onclick="location.href='./#projects'"
+        aria-hidden="true"
+      ></i>
     </section>
 
     <section id="projects">
-        <p class="section_text_top">Browse My Recent</p>
-        <h1 class="title-top">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container-exp color-container">
-                    <div class="article-container">
-                        <img src="./assets/project_1.jpg" alt="Project 1" class="project-img"/>
-                    </div>
-                    <h2 class="experience-title project-title">Butterfly Garden IoT</h2>
-                    <p class="project-text">An IoT-based system to monitor temperature, humidity, CO2 levels, soil moisture, TVOC, and visitor count in FIU's butterfly garden for real-time environmental monitoring and engagement.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/INIT-BUILD-IoT-Garden/iot_garden'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://init-build-iot-garden.github.io/iot_garden/'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container-exp color-container">
-                    <div class="article-container">
-                        <img src="./assets/project_2.jpg" alt="Project 2" class="project-img"/>
-                    </div>
-                    <h2 class="experience-title project-title">OpenController</h2>
-                    <p class="project-text">An extensible controller capable of switching between gamepad and keyboard modes, featuring customizable key bindings for enhanced accessibility and user-friendly input options.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RamenBuddha/SH24'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://devpost.com/software/opencontroller'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container-exp color-container">
-                    <div class="article-container">
-                        <img src="./assets/Screenshot 2024-12-23 201008-1080x1080.png" alt="Project 3" class="project-img"/>
-                    </div>
-                    <h2 class="experience-title project-title">CatTrax</h2>
-                    <p class="project-text">A VR game simulating real locomotive controls, enabling players to navigate a cat train between tracks while avoiding obstacles.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn">
-                            Awaiting Publication
-                        </button>
-                    </div>
-                </div>
+      <p class="section_text_top">Browse My Recent</p>
+      <h1 class="title-top">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container-exp color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project_4.jpg"
+                alt="Project 4"
+                class="project-img"
+              />
             </div>
+            <h2 class="experience-title project-title">InsuMAS</h2>
+            <p class="project-text">
+              InsuMAS is a multi-agent AI system for insurance assistance. Using
+              supervisor-agent architecture, it explains terminology, recommends
+              plans, calculates costs, and locates healthcare providers.
+            </p>
+            <p class="project-text" style="font-style: italic; color: #00cea8">
+              Python, LangChain, AI agents
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/RajAnesh98/InsuMAS'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://devpost.com/software/insumas-multi-agent-system'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container-exp color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project_3.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-title project-title">Butterfly Garden IoT</h2>
+            <p class="project-text">
+              An IoT-based system to monitor temperature, humidity, CO2 levels,
+              soil moisture, TVOC, and visitor count in FIU's butterfly garden
+              for real-time environmental monitoring and engagement.
+            </p>
+            <p class="project-text" style="font-style: italic; color: #00cea8">
+              Arduino, ESP32, C++, PlatformIO
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/INIT-BUILD-IoT-Garden/iot_garden'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://init-build-iot-garden.github.io/iot_garden/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container-exp color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project_2.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-title project-title">OpenController</h2>
+            <p class="project-text">
+              An extensible controller capable of switching between gamepad and
+              keyboard modes, featuring customizable key bindings for enhanced
+              accessibility and user-friendly input options.
+            </p>
+            <p class="project-text" style="font-style: italic; color: #00cea8">
+              Arduino, C++, Circuit assembly
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/RamenBuddha/SH24'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://devpost.com/software/opencontroller'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container-exp color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project_1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-title project-title">CatTrax</h2>
+            <p class="project-text">
+              A VR game simulating real locomotive controls, enabling players to
+              navigate a cat train between tracks while avoiding obstacles.
+            </p>
+            <p class="project-text" style="font-style: italic; color: #00cea8">
+              Unity, Game mechanics
+            </p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn">
+                Awaiting Publication
+              </button>
+            </div>
+          </div>
         </div>
-        <i class="fa-solid fa-angles-down arrow-icon" onclick="location.href='./#contact'" aria-hidden="true"></i>   
+      </div>
+      <i
+        class="fa-solid fa-angles-down arrow-icon"
+        onclick="location.href='./#contact'"
+        aria-hidden="true"
+      ></i>
     </section>
 
     <section id="contact">
-        <p class="section_text_top">Get in Touch</p>
-        <h1 class="title-top">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <i class="fa-solid fa-envelope contact-icon" aria-hidden="true"></i>
-                <p><a href="mailto:hly003@fiu.edu">hly003@fiu.edu</a></p>
-            </div>
-            <div class="contact-info-container">
-                <i class="fa-brands fa-linkedin contact-icon" aria-hidden="true"></i>
-                <p><a href="https://www.linkedin.com/in/huu-thang-ly/">LinkedIn</a></p>
-            </div>
+      <p class="section_text_top">Get in Touch</p>
+      <h1 class="title-top">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <i class="fa-solid fa-envelope contact-icon" aria-hidden="true"></i>
+          <p><a href="mailto:hly003@fiu.edu">hly003@fiu.edu</a></p>
         </div>
+        <div class="contact-info-container">
+          <i class="fa-brands fa-linkedin contact-icon" aria-hidden="true"></i>
+          <p>
+            <a href="https://www.linkedin.com/in/huu-thang-ly/">LinkedIn</a>
+          </p>
+        </div>
+      </div>
     </section>
-    <footer>   
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
