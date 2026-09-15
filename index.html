@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -55,7 +55,7 @@
           <h1 class="title">Huu Thang Ly</h1>
           <div class="section_text_p2">
             <p style="color: white">Computer Engineering Student</p>
-            <p style="color: white">Florida International University</p>
+            <p style="color: white">University of Cincinnati</p>
           </div>
           <div class="btn-container">
             <button
@@ -66,7 +66,7 @@
             </button>
             <button
               class="btn btn-color-1"
-              onclick="location.href='./#contact'"
+              onclick="location.href = './#contact'"
             >
               Contact Info
             </button>
@@ -89,7 +89,7 @@
       <div class="section-container">
         <div class="section_pic-container">
           <img
-            src="./assets/about_pic.png"
+            src="./assets/about_pic.jpg"
             alt="Profile picture"
             class="about-pic"
           />
@@ -97,14 +97,13 @@
         <div class="about-details-container">
           <div class="text-container">
             <p>
-              I'm currently a senior Computer Engineering student at Florida
-              International University, concentrating in embedded systems,
-              robotics, hardware and AI/Machine Learning. With a solid
-              foundation in circuit design, microcontrollers, FPGA, and
-              proficiency in programming languages such as C, C++, Python, and
-              MATLAB, I aim to make a meaningful impact in computer engineering
-              by developing hardware and AI solutions to solve complex
-              challenges.
+              I'm currently a Master's student in Computer Engineering at the
+              University of Cincinnati, with a focus on robotics and intelligent
+              systems. With a solid foundation in circuit design, embedded
+              systems, and robotics simulation using Unreal Engine, along with
+              proficiency in Python and C/C++, I aim to make a meaningful impact
+              in robotics by integrating AI to enhance robotic perception,
+              autonomy, and decision-making.
             </p>
           </div>
           <div class="about-containers">
@@ -114,8 +113,8 @@
                 aria-hidden="true"
               ></i>
               <h3>Education</h3>
-              <p>B.Sc. in Computer Engineering</p>
-              <p>GPA: 3.97</p>
+              <p>M.Sc. in CE at University of Cincinnati</p>
+              <p>B.Sc. in CE at Florida International University (GPA: 3.97)</p>
             </div>
             <div class="details-container">
               <i
@@ -152,7 +151,7 @@
       </div>
       <i
         class="fa-solid fa-angles-down arrow-icon"
-        onclick="location.href='./#experience'"
+        onclick="location.href = './#experience'"
         aria-hidden="true"
       ></i>
     </section>
@@ -180,11 +179,7 @@
                 for resource-constrained environments
               </li>
               <div class="experience-images-container">
-                <img
-                  src="./assets/GAIM_1.jpg"
-                  alt="Project 1"
-                  class="experience-img"
-                />
+                <img src="./assets/GAIM_1.jpg" class="experience-img" />
               </div>
             </div>
           </div>
@@ -196,16 +191,17 @@
             </h3>
             <div class="article-container">
               <li>
-                Implemented an autonomous drone control system with YOLO-based
-                object detection and Gemini Live Model integration, achieving
-                autonomous task execution with real-time response to dynamic
-                environments
+                Prototyped a real-time autonomous control pipeline integrating
+                YOLO object detection and Gemini Live Model for dynamic
+                environment response, validated on driving footage as a
+                proof-of-concept for drone deployment.
               </li>
               <li>
                 Architected multi-agent systems with LangChain for cybersecurity
                 operations, delivering coordinated malicious link detection and
                 security log analysis
               </li>
+              <img src="./assets/AV_exp.jpeg" class="experience-img" />
             </div>
           </div>
         </div>
@@ -268,7 +264,7 @@
       </div>
       <i
         class="fa-solid fa-angles-down arrow-icon"
-        onclick="location.href='./#projects'"
+        onclick="location.href = './#projects'"
         aria-hidden="true"
       ></i>
     </section>
@@ -281,6 +277,36 @@
           <div class="details-container-exp color-container">
             <div class="article-container">
               <img
+                src="./assets/project_5.gif"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-title project-title">Flash-Recon</h2>
+            <p class="project-text">
+              A real-time 3D reconstruction system that builds accurate 3D
+              environments using only standard monocular RGB cameras. Evaluated
+              across the TartanAir, EuRoC, and TUM benchmarks, Flash-ReCon
+              achieves processing speeds ranging from 8 to 23 FPS depending on
+              scene complexity and motion.
+            </p>
+            <p class="project-text" style="font-style: italic; color: #00cea8">
+              Python, OpenCV, Open3D, Gaussian Splatting, PC (RTX 4070 Ti Super)
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="
+                  location.href = 'https://www.youtube.com/watch?v=UXoeI7yuTv8'
+                "
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container-exp color-container">
+            <div class="article-container">
+              <img
                 src="./assets/project_4.jpg"
                 alt="Project 4"
                 class="project-img"
@@ -288,7 +314,7 @@
             </div>
             <h2 class="experience-title project-title">InsuMAS</h2>
             <p class="project-text">
-              InsuMAS is a multi-agent AI system for insurance assistance. Using
+              A multi-agent AI system for insurance assistance. Using
               supervisor-agent architecture, it explains terminology, recommends
               plans, calculates costs, and locates healthcare providers.
             </p>
@@ -298,18 +324,25 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/RajAnesh98/InsuMAS'"
+                onclick="
+                  location.href = 'https://github.com/RajAnesh98/InsuMAS'
+                "
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://devpost.com/software/insumas-multi-agent-system'"
+                onclick="
+                  location.href =
+                    'https://devpost.com/software/insumas-multi-agent-system'
+                "
               >
                 Live Demo
               </button>
             </div>
           </div>
+        </div>
+        <div class="about-containers">
           <div class="details-container-exp color-container">
             <div class="article-container">
               <img
@@ -330,13 +363,19 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/INIT-BUILD-IoT-Garden/iot_garden'"
+                onclick="
+                  location.href =
+                    'https://github.com/INIT-BUILD-IoT-Garden/iot_garden'
+                "
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://init-build-iot-garden.github.io/iot_garden/'"
+                onclick="
+                  location.href =
+                    'https://init-build-iot-garden.github.io/iot_garden/'
+                "
               >
                 Live Demo
               </button>
@@ -362,13 +401,15 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/RamenBuddha/SH24'"
+                onclick="location.href = 'https://github.com/RamenBuddha/SH24'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://devpost.com/software/opencontroller'"
+                onclick="
+                  location.href = 'https://devpost.com/software/opencontroller'
+                "
               >
                 Live Demo
               </button>
@@ -400,7 +441,7 @@
       </div>
       <i
         class="fa-solid fa-angles-down arrow-icon"
-        onclick="location.href='./#contact'"
+        onclick="location.href = './#contact'"
         aria-hidden="true"
       ></i>
     </section>
@@ -411,7 +452,7 @@
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <i class="fa-solid fa-envelope contact-icon" aria-hidden="true"></i>
-          <p><a href="mailto:hly003@fiu.edu">hly003@fiu.edu</a></p>
+          <p><a href="mailto:lyhy@mail.uc.edu">lyhy@mail.uc.edu</a></p>
         </div>
         <div class="contact-info-container">
           <i class="fa-brands fa-linkedin contact-icon" aria-hidden="true"></i>
